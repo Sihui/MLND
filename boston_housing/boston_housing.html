@@ -13822,8 +13822,10 @@ H8lr1wrafrXAAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-For the graph with max depth of 6, as more training points are added, the score of the training curves decrease a bit but the score of testing curve increase. Having more training points benefits the model b/c we should evaludate how good the model performs based on testing score not training score.
-The learning curves do converge to around 0.8-0.9.</p>
+For the graph with max depth of 6, in the beginning, as more training points are added, the score of the training curves decrease a bit and the score of testing curve increase.
+But after a while, the testing curve stays around the same level as training points increase.
+Having more training points do not always benefit the model because as we can see from the graph, the testing curve stops increasing much as the number of training points reaches 150. It converge to around 0.75. 
+This is becuase the modal has learned the most of what it could learn out of the data. Having more data points after that does not help much.</p>
 
 </div>
 </div>
@@ -14645,7 +14647,8 @@ mbUwJ2tmZmZmLczJmpmZmVkLc7JmZmZm1sKcrJmZmZm1sP8HIqz44m8X4UsAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-The grid search technique is, given a list of paramemters and their possible values, finding a combination of values for these parameters that results a most optimized model.</p>
+The grid search technique is an exhuasting search on a given list of paramemters and their possible values.
+It tries all different combinations of values of given paramemters and sees how each of them perform on the given performance metric.</p>
 
 </div>
 </div>
